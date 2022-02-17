@@ -45,7 +45,13 @@ CREATE TABLE Rental_Car_Inventory (
 	Location_ID char(5) NOT NULL,
 	Vehicle_ID char(5) NOT NULL,
 	Rental_Date date,
-	Available bit
+	Available bit,
+	FOREIGN KEY (Location_ID) references Location
+		ON DELETE SET NULL
+		ON UPDATE  CASCADE,
+	FOREIGN KEY (Vehicle_ID) references Vehicle
+		ON DELETE SET NULL
+		ON UPDATE CASCADE
 );
 
 CREATE TABLE Reservation (
@@ -75,4 +81,3 @@ CREATE TABLE Reservation (
 	FOREIGN KEY (Dropoff_ID) references Location,
 	FOREIGN KEY (Vehicle_ID) references Vehicle
 );
-
