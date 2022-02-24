@@ -1,5 +1,5 @@
 # Vehicle_Database
 
-Led a team of five to develop a database from concept to mapping to SQL code to provide vehicle rental services with a reliable infrastructure to track customers and vehicle availability. 
+Modelled the relational database with Entity-Relational (ER) diagram initally based off business requirements.
 
-Designed a database with integrity control and normalized tables. Implemented on SQL.
+SQL code written through MySQL to create tables accordingly to ER diagram. Introduced integrity control and normalization for reliable and ease of use database.
